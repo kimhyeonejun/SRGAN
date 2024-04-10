@@ -13,8 +13,15 @@ The comparision takes place with 4-upscaling images. Now, I compare this image w
 
 Lpips index is a method used for measuring the quality of image, invented after the publication of original paper. In the origianl paper, MOS (Mean Opinion Score), which is subjective, is used for quality assessment. Instead, I make reference to more objective index, lpips, and compare it, indicated in this paper, SIR-SRGAN: Super-Resolution Generative Adversarial Network with Self-Interpolation Ranker, with my model.
 
-| `<Mine>`  | `<Paper>`   |
+| `<MINE>`  | `<PAPER>`   |
 |------------|----------------|
 | lpips: 0.2279 | lpips : 0.2712 |
 
-Note that my measurement is done from importing lpips library in python. 
+Note that my measurement is done from importing lpips library in python.</br>
+To compare with SRCNN and SRGAN, the quality assessment shows that there is a distinction between SRCNN and SRGAN. 
+|`<SRCNN>`         |`<SRGAN>`   |    `<HR>`|
+|--------------|----------------|-----------------|
+|![image](https://github.com/kimhyeonejun/SRGAN/assets/103301952/694da5f2-ad4a-4d40-94ea-97a72a0b5372)|![image](https://github.com/kimhyeonejun/SRGAN/assets/103301952/2198702f-d464-4657-9ef0-6c0cf2a6bbad)|![image](https://github.com/kimhyeonejun/SRGAN/assets/103301952/de3687e4-39f1-4bed-aed1-03d7bac184cd)|
+|`     <PSNR: 29.69dB>     `|   `     <PSNR: 26.84dB>    `|    `     Original image     `|
+
+Despite considerable differences between PSNR of SRCNN and SRGAN, the quality of both images does not make great differences.
