@@ -7,9 +7,9 @@ This work provides the implementation of SRGAN, a super-resolution model using G
 |![image](https://github.com/kimhyeonejun/SRGAN/assets/103301952/72359723-bcae-4bcd-8786-aba0402bd0da)|
 
 The comparision takes place with 4-upscaling images. Now, I compare this image with that given in the original paper.
-| `<Low-resolution image>`             <SRGAN>                `<ORIGINAL>`   |
-|----------------------------|
-|![image](https://github.com/kimhyeonejun/SRGAN/assets/103301952/72359723-bcae-4bcd-8786-aba0402bd0da)|
+| `<Mine>`        |        `<PAPER>`   |
+|----------------------------|-------|
+|![image](https://github.com/kimhyeonejun/SRGAN/assets/103301952/d2ad3e2c-fd90-4950-a995-aa9fcf168cc6)|![image](https://github.com/kimhyeonejun/SRGAN/assets/103301952/cfc1e859-5e59-4029-a574-fa8a44ec7139)|
 
 Lpips index is a method used for measuring the quality of image, invented after the publication of original paper. In the origianl paper, MOS (Mean Opinion Score), which is subjective, is used for quality assessment. Instead, I make reference to more objective index, lpips, and compare it, indicated in this paper, SIR-SRGAN: Super-Resolution Generative Adversarial Network with Self-Interpolation Ranker, with my model.
 
@@ -17,4 +17,4 @@ Lpips index is a method used for measuring the quality of image, invented after 
 |------------|----------------|
 | lpips: 0.2279 | lpips : 0.2712 |
 
-Note that each measurement is done with Y channels in YGB coordinates.
+Note that my measurement is done from importing lpips library in python. 
